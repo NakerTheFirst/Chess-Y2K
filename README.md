@@ -4,7 +4,15 @@ having played at least a game daily.
 
 ---
 ## TODO:
-- Phase 1. implementation
+- Phase 2. implementation
+- Phase 3. implementation
+- Phase 4. implementation
+- Phase 5. implementation
+- Phase 6. implementation
+- Phase 7. implementation
+- Phase 8. implementation
+- Phase 9. implementation
+- Consider using a function with a random +/- delta instead of hard coded values for each phase
 
 
 # Temat
@@ -33,9 +41,9 @@ grając przynajmniej jedną grę dziennie?
 
 ## 2. Dzienna ilość zagranych meczów
 - Rozkład dyskretny
-- Dużo czasu: 0-3 
-- Średnio czasu: 3-5 
-- Mało czasu: 5-25 
+- Dużo czasu: 1-3 
+- Średnio czasu: 4-8 
+- Mało czasu: 9-25 
 
 ## 3. Dzienna delta punktów rankingowych
 - Rozkład dyskretny 
