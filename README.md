@@ -27,9 +27,9 @@ grając przynajmniej jedną grę dziennie?
 # Etapy
 ## 1. Startowy poziom rankingowy
 - Rozkład dyskretny
-- Dużo czasu: 100-900
-- Średnio czasu: 900-1400
-- Średnio mało czasu: 1400-2000
+- Dużo czasu: 100-899
+- Średnio czasu: 900-1399
+- Średnio mało czasu: 1399-1999
 
 ## 2. Dzienna ilość zagranych meczów
 - Rozkład dyskretny
