@@ -62,8 +62,8 @@ grając przynajmniej jedną grę dziennie?
 ## 5. Dzienna ilość wykonanych puzzli 
 - Rozkład dyskretny 
 - Dużo czasu: 0-3 
-- Średnio czasu: 3-10 
-- Mało czasu: 10-30 
+- Średnio czasu: 4-10 
+- Mało czasu: 11-30 
 
 ## 6. Średni dzienny procent zanalizowanych przegranych gier 
 - Rozkład dyskretny 
