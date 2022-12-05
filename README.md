@@ -13,6 +13,7 @@ having played at least a game daily.
 - Phase 8. implementation
 - Phase 9. implementation
 - Consider using a function with a random +/- delta instead of hard coded values for each phase
+- Simulate the process daily, with a track of ranking points
 
 
 # Temat
@@ -48,9 +49,9 @@ grając przynajmniej jedną grę dziennie?
 ## 3. Dzienna delta punktów rankingowych
 - Rozkład dyskretny 
 - Zależny od dziennej ilości zagranych meczów 
-- Dużo czasu: -175 - +10 
-- Średnio czasu: +10 - +30 
-- Mało czasu: +30 - +200 
+- Dużo czasu: -20 - 0 
+- Średnio czasu: +1 - +20 
+- Mało czasu: +21 - +50 
 
 ## 4. Średni dzienny procent dokładności na mecz 
 - Rozkład zmiennej ciągłej 
