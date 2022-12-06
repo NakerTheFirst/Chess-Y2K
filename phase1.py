@@ -2,19 +2,7 @@ import random
 import numpy as np
 
 
-def assign_p1_time(ranking):
-    # Initialise for debugging
-    days = -1
-
-    match ranking:
-        case a if 100 <= ranking <= 899: days = 2400
-        case b if 900 <= ranking <= 1399: days = 1900
-        case c if 1400 <= ranking <= 1999: days = 1500
-
-    return days
-
-
-def get_p1_ranking():
+def get_p1_initial_ranking():
 
     # 100-899 RP interval
     high_time_interval = random.randint(100, 899)
@@ -38,6 +26,6 @@ def get_p1_ranking():
     values = [high_time_interval, medium_time_interval, low_time_interval]
     probabilities = [hti_probability, mti_probability, lti_probability]
 
-    ranking = np.random.choice(values, 1, p=probabilities)
+    ranking_init = np.random.choice(values, p=probabilities)
 
-    return assign_p1_time(ranking)
+    return ranking_init
