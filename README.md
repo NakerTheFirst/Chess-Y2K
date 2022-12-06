@@ -1,6 +1,6 @@
 # Chess-Y2K
-A python simulation on how much time it takes for one to reach 2000 ranking points on chess.com, 
-having played at least a game daily.
+A python simulation on what ranking can one achieve on chess.com, 
+having played at least a game daily for a month.
 
 ---
 ## TODO:
@@ -13,12 +13,13 @@ having played at least a game daily.
 - Phase 8. implementation
 - Phase 9. implementation
 - Consider using a function with a random +/- delta instead of hard coded values for each phase
-- Simulate the process daily, with a track of ranking points
+- Consider simulating the process daily, with a track of ranking points
+- Add continuous variable distributions
+
 
 
 # Temat
-Ile czasu potrzeba, żeby osiągnąć 2000 punktów rankingowych na chess.com, 
-grając przynajmniej jedną grę dziennie?
+Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedną grę dziennie?
 
 
 ## Lista etapów
@@ -27,10 +28,20 @@ grając przynajmniej jedną grę dziennie?
 3. Dzienna delta punktów rankingowych 
 4. Średni dzienny procent dokładności na mecz 
 5. Dzienna ilość wykonanych puzzli 
-6. Dzienna ilość wykonanych analiz przegranych gier 
+6. Dzienny procent zanalizowanych przegranych gier 
 7. Dzienna ilość minut materiałów wideo obejrzanych nt. nauki gry w szachy 
 8. Dzienna ilość przespanych godzin 
 9. Wiek gracza 
+
+
+## Etapy losowane dziennie
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
 
 
 # Etapy
@@ -42,9 +53,9 @@ grając przynajmniej jedną grę dziennie?
 
 ## 2. Dzienna ilość zagranych meczów
 - Rozkład dyskretny
-- Dużo czasu: 1-3 
-- Średnio czasu: 4-8 
-- Mało czasu: 9-25 
+- Dużo czasu: 1-2 
+- Średnio czasu: 3-6 
+- Mało czasu: 7-30 
 
 ## 3. Dzienna delta punktów rankingowych
 - Rozkład dyskretny 
@@ -65,7 +76,7 @@ grając przynajmniej jedną grę dziennie?
 - Średnio czasu: 4-10 
 - Mało czasu: 11-30 
 
-## 6. Średni dzienny procent zanalizowanych przegranych gier 
+## 6. Dzienny procent zanalizowanych przegranych gier 
 - Rozkład dyskretny 
 - Dużo czasu: 0%-25%
 - Średnio czasu: 25%-70%
@@ -90,6 +101,7 @@ grając przynajmniej jedną grę dziennie?
 - Średnio czasu: 28-35
 - Mało czasu: 10-28
 
+
 ## Lista kluczowych pojęć i zagadnień
 - Symulacja
 - Modelowanie
@@ -100,7 +112,6 @@ grając przynajmniej jedną grę dziennie?
 - Symulacja Monte Carlo
 - Metody dopasowania/modelowania rozkładów
 
-
 ## Podstawowe pojęcia i zagadnienia
 ### Symulacja
 - Wielokrotne generowanie liczb
@@ -109,7 +120,7 @@ grając przynajmniej jedną grę dziennie?
 - Badanie rozkładu liczb z symulacji w celu opisania go funkcją matematyczną
 
 ### Zmienna losowa ciągła
-- Zmienna losowa przyjmuje nieskończoną liczbę różnych wartości, np. wartości z przedziału <2, 7> 
+- Zmienna losowa przyjmująca nieskończoną liczbę różnych wartości, np. wartości z przedziału <2, 7> 
 
 ### Zmienna dyskretna
 - Zmienna dyskretna to zmienna losowa, która przyjmuje wartości ze skończonego zbioru, np. {2, 1, 3, 7}
