@@ -3,6 +3,7 @@ import numpy as np
 
 
 def get_puzzles_daily():
+    """Simulate number of chess puzzles done per day"""
     low_ranking_interval = random.randint(0, 3)
     medium_ranking_interval = random.randint(4, 10)
     high_ranking_interval = random.randint(11, 30)

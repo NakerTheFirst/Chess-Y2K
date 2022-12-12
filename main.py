@@ -4,7 +4,7 @@ import phase1
 import phase2
 import phase3
 
-# TODO: Phase 6 implementation
+# TODO:
 # TODO: Implement daily simulation process with a ranking points track based on matches won
 
 

@@ -1,14 +1,12 @@
-import numpy as np
-import random
 import utility
 
 
 def get_acc():
-    """Used to simulate whether a subject won or lost a game"""
+    """Simulate the % accuracy of a game"""
 
     interval = (1, 99)
 
     # Run through the whole range of specified intervals
-    acc = utility.elim_method(interval[0], interval[1])[1]
+    acc = utility.elim_method(interval[0], interval[1], utility.learning_curve)[1]
 
     return acc

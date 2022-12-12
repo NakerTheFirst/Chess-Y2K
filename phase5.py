@@ -1,22 +1,12 @@
-import random
-import numpy as np
+import utility
 
 
 def get_reviews_daily():
-    """Get percentage of games analysed and reviewed per day"""
+    """Simulate the percentage of lost games analysed per day"""
 
-    low_ranking_interval = random.randint(0, 24)
-    medium_ranking_interval = random.randint(25, 69)
-    high_ranking_interval = random.randint(70, 100)
+    interval = (1, 99)
 
-    # The probabilities of drawing a number from each interval
-    hri_prob = 0.2
-    mri_prob = 0.65
-    lri_prob = 0.15
-
-    values = [low_ranking_interval, medium_ranking_interval, high_ranking_interval]
-    probabilities = [hri_prob, mri_prob, lri_prob]
-
-    reviews_daily = np.random.choice(values, p=probabilities)
+    # Run through the whole range of specified intervals
+    reviews_daily = utility.elim_method(interval[0], interval[1], utility.losses_analysed_curve)[1]
 
     return reviews_daily
