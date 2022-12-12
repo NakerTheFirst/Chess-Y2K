@@ -22,9 +22,9 @@ having played at least a game daily for a month.
 Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedną grę dziennie?
 
 
-## Lista etapów
-1. Startowy poziom rankingowy
-2. Dzienna ilość zagranych meczów
+## Lista etapów 
+1. Startowy poziom rankingowy 
+2. Dzienna ilość zagranych meczów 
 3. Średni dzienny procent dokładności na mecz 
 4. Dzienna ilość wykonanych puzzli 
 5. Dzienny procent zanalizowanych przegranych gier 
@@ -46,59 +46,53 @@ Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedn
 # Etapy
 ## 1. Startowy poziom rankingowy
 - Rozkład dyskretny
-- Dużo czasu: 100-899
-- Średnio czasu: 900-1399
-- Średnio mało czasu: 1399-1999
+- Wysoki ranking: 100-899
+- Średni ranking: 900-1399
+- Średnio niski ranking: 1399-1999
 
 ## 2. Dzienna ilość zagranych meczów
 - Rozkład dyskretny
-- Dużo czasu: 1-2 
-- Średnio czasu: 3-6 
-- Mało czasu: 7-30 
+- Wysoki ranking: 1-2 
+- Średni ranking: 3-6 
+- Niski ranking: 7-30 
 
-## 3. Dzienna delta punktów rankingowych
-- Rozkład dyskretny 
-- Zależny od dziennej ilości zagranych meczów 
-- Dużo czasu: -20 - 0 
-- Średnio czasu: +1 - +20 
-- Mało czasu: +21 - +50 
-
-## 4. Średni dzienny procent dokładności na mecz 
+## 3. Średni dzienny procent dokładności na mecz 
 - Rozkład zmiennej ciągłej 
-- Dużo czasu: 0%-70% 
-- Średnio czasu: 70%-85% 
-- Mało czasu: 85%-100% 
+- Wysoki ranking: 85%-100%
+- Średni ranking: 70%-85% 
+- Niski ranking: 1%-70% 
 
-## 5. Dzienna ilość wykonanych puzzli 
+## 4. Dzienna ilość wykonanych puzzli 
 - Rozkład dyskretny 
-- Dużo czasu: 0-3 
-- Średnio czasu: 4-10 
-- Mało czasu: 11-30 
+- Wysoki ranking: 0-3 
+- Średni ranking: 4-10 
+- Niski ranking: 11-30 
 
-## 6. Dzienny procent zanalizowanych przegranych gier 
+## 5. Dzienny procent zanalizowanych przegranych gier 
 - Rozkład dyskretny 
-- Dużo czasu: 0%-25%
-- Średnio czasu: 25%-70%
-- Mało czasu: 70%-100%
+- Wysoki ranking: 0%-25%
+- Średni ranking: 25%-70%
+- Niski ranking: 70%-100%
 
-## 7. Dzienna ilość minut materiałów wideo obejrzanych nt. nauki gry w szachy 
+## 6. Dzienna ilość minut materiałów wideo obejrzanych nt. nauki gry w szachy 
 - Rozkład zmiennej ciągłej 
-- Dużo czasu: 0-10
-- Średnio czasu: 10-20
-- Mało czasu: 20-60
+- Wysoki ranking: 20-60
+- Średni ranking: 10-20
+- Niski ranking: 0-10
 
-## 8. Dzienna ilość przespanych godzin 
-- Rozkład zmiennej ciągłej 
-- Dużo czasu: 0h-5h
-- Średnio czasu: 5h-7h
-- Mało czasu: 7h-10h
+# ZMIANA
+## 7. Dzienna ilość przespanych godzin 
+- Rozkład dyskretny 
+- Wysoki ranking: 0h-5h
+- Średni ranking: 6h-7h
+- Niski ranking: 8h-10h
 
-## 9. Wiek gracza 
+## 8. Wiek gracza 
 - Rozkład dyskretny 
 - Wyznacza peak intelektualny, związany z możliwością przyswajania nowych informacji 
-- Dużo czasu: 0-10 AND 35+
-- Średnio czasu: 28-35
-- Mało czasu: 10-28
+- Wysoki ranking: 0-10 AND 35+
+- Średni ranking: 28-35
+- Niski ranking: 10-28
 
 
 ## Lista kluczowych pojęć i zagadnień

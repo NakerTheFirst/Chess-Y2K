@@ -1,19 +1,18 @@
 import phase1
 import phase2
+import phase3
+import utility
 
-# TODO: Commit the changes
-# TODO: Phase 3. implementation
-# TODO: Phase 5. implementation
-# TODO: Phase 6. implementation
-# TODO: Phase 7. implementation
-# TODO: Phase 8. implementation
-# TODO: Implement a function with a random +/- delta instead of hard coded values for each phase
+# TODO: Implement P3
 # TODO: Implement daily simulation process with a ranking points track based on matches won
+# TODO: Remember to take the missing 0.5% into account in phase3.f(x) function
 
 
 def main():
 
-    pass
+    print(utility.elim_method(1, 99))
+
+    return 0
 
 
 if __name__ == "__main__":
