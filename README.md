@@ -70,9 +70,9 @@ Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedn
 
 ## 5. Dzienny procent zanalizowanych przegranych gier 
 - Rozkład dyskretny 
-- Wysoki ranking: 0%-25%
-- Średni ranking: 25%-70%
-- Niski ranking: 70%-100%
+- Wysoki ranking: 70%-100%
+- Średni ranking: 25%-69%
+- Niski ranking: 0%-24%
 
 ## 6. Dzienna ilość minut materiałów wideo obejrzanych nt. nauki gry w szachy 
 - Rozkład zmiennej ciągłej 
@@ -90,9 +90,9 @@ Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedn
 ## 8. Wiek gracza 
 - Rozkład dyskretny 
 - Wyznacza peak intelektualny, związany z możliwością przyswajania nowych informacji 
-- Wysoki ranking: 0-10 AND 35+
+- Wysoki ranking: 10-28
 - Średni ranking: 28-35
-- Niski ranking: 10-28
+- Niski ranking: 0-10 AND 35+
 
 
 ## Lista kluczowych pojęć i zagadnień

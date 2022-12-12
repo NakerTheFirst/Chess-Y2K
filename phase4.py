@@ -2,19 +2,18 @@ import random
 import numpy as np
 
 
-def get_p4_puzzles():
-
-    high_time_interval = random.randint(0, 3)
-    medium_time_interval = random.randint(4, 10)
-    low_time_interval = random.randint(11, 30)
+def get_puzzles_daily():
+    low_ranking_interval = random.randint(0, 3)
+    medium_ranking_interval = random.randint(4, 10)
+    high_ranking_interval = random.randint(11, 30)
 
     # The probabilities of drawing a number from each interval
-    hti_probability = 0.35
-    mti_probability = 0.55
-    lti_probability = 0.1
+    hri_prob = 0.35
+    mri_prob = 0.55
+    lri_prob = 0.1
 
-    values = [high_time_interval, medium_time_interval, low_time_interval]
-    probabilities = [hti_probability, mti_probability, lti_probability]
+    values = [low_ranking_interval, medium_ranking_interval, high_ranking_interval]
+    probabilities = [hri_prob, mri_prob, lri_prob]
 
     puzzles_daily = np.random.choice(values, p=probabilities)
 

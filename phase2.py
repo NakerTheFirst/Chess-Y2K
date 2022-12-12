@@ -2,7 +2,7 @@ import random
 import numpy as np
 
 
-def get_p2_games_daily():
+def get_games_daily():
 
     low_ranking_interval = random.randint(1, 2)
     medium_ranking_interval = random.randint(3, 6)

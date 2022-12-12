@@ -3,7 +3,7 @@ import random
 import utility
 
 
-def get_p3_acc():
+def get_acc():
     """Used to simulate whether a subject won or lost a game"""
 
     interval = (1, 99)
