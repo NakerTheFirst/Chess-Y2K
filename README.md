@@ -52,15 +52,15 @@ Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedn
 
 ## 2. Dzienna ilość zagranych meczów
 - Rozkład dyskretny
-- Wysoki ranking: 1-2 
+- Wysoki ranking: 7-30
 - Średni ranking: 3-6 
-- Niski ranking: 7-30 
+- Niski ranking: 1-2 
 
-## 3. Średni dzienny procent dokładności na mecz 
+## 3. Procent dokładności na mecz 
 - Rozkład zmiennej ciągłej 
-- Wysoki ranking: 85%-100%
-- Średni ranking: 70%-85% 
-- Niski ranking: 1%-70% 
+- Wysoki ranking: 85%-99%
+- Średni ranking: 70%-84% 
+- Niski ranking: 1%-69% 
 
 ## 4. Dzienna ilość wykonanych puzzli 
 - Rozkład dyskretny 

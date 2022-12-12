@@ -9,7 +9,7 @@ def learning_curve(x):
 
 
 def elim_method(range_start, range_stop):
-    """Elimination method for learning curve. The arguments interval range have to be integers from 1-99."""
+    """Elimination method for the learning curve. The arguments interval range have to be integers from 1-99."""
 
     # Check if f(x) is lower than 0
     for x in range(range_start, range_stop):

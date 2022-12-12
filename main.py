@@ -3,14 +3,13 @@ import phase2
 import phase3
 import utility
 
-# TODO: Implement P3
 # TODO: Implement daily simulation process with a ranking points track based on matches won
 # TODO: Remember to take the missing 0.5% into account in phase3.f(x) function
 
 
 def main():
 
-    print(utility.elim_method(1, 99))
+    print(phase3.get_p3_acc())
 
     return 0
 
