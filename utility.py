@@ -4,17 +4,17 @@ import scipy
 
 
 def learning_curve(x):
-    """Argument has to be an integer from the interval 1-99"""
+    """A curve simulating learning. Argument has to be an integer from the interval 1-99"""
     return math.log(x, 1.0472)
 
 
 def losses_analysed_curve(x):
-    """Argument has to be an integer from the interval 1-99"""
+    """A curve simulating % of people analysing lost games. Argument has to be an integer from the interval 1-99"""
     return 0.8299*(math.e**(0.0484*x))
 
 
 def elim_method(range_start, range_stop, fun):
-    """Elimination method for 1-99% range functions. The arguments are integers."""
+    """Elimination method for 1-99% range functions. The range_start and range_stop arguments are integers."""
 
     # Check if f(x) is lower than 0
     for x in range(range_start, range_stop):

@@ -2,21 +2,6 @@
 A python simulation on how much one's ranking can improve on chess.com, 
 having played at least a game daily for a month.
 
----
-## TODO:
-- Phase 2. implementation
-- Phase 3. implementation
-- Phase 4. implementation
-- Phase 5. implementation
-- Phase 6. implementation
-- Phase 7. implementation
-- Phase 8. implementation
-- Phase 9. implementation
-- Consider using a function with a random +/- delta instead of hard coded values for each phase
-- Consider simulating the process daily, with a track of ranking points
-- Add continuous variable distributions
-
-
 
 # Temat
 Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedną grę dziennie?
@@ -30,17 +15,18 @@ Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedn
 5. Dzienny procent zanalizowanych przegranych gier 
 6. Dzienna ilość minut materiałów wideo obejrzanych nt. nauki gry w szachy 
 7. Dzienna ilość przespanych godzin 
-8. Wiek gracza 
+8. Wiek gracza
 
 
-## Etapy losowane dziennie
-- 2
-- 3
-- 4
-- 5
-- 6
-- 7
-- 8
+## Działanie dziennych symulacji
+Losowana jest delta acc. Zależnie od etapu i przedziału może być duża, średnia, niska, bądź ujemna.
+
+Wiek wpływa na wygrywanie gier:
+- Jeśli jesteś młody wygrywasz dużo więcej gier
+- Jeśli jesteś średni wygrywasz wiele więcej gier
+- Jeśli jesteś stary wygrywasz niewiele więcej gier
+
+A good idea is not to amplify the acc. score directly, but to do so on the probability of generating higher acc.
 
 
 # Etapy
@@ -89,9 +75,9 @@ Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedn
 ## 8. Wiek gracza 
 - Rozkład dyskretny 
 - Wyznacza peak intelektualny, związany z możliwością przyswajania nowych informacji 
-- Wysoki ranking: 10-28
-- Średni ranking: 28-35
-- Niski ranking: 0-10 AND 35+
+- Wysoki ranking: 5-28
+- Średni ranking: 29-45
+- Niski ranking: 1-4 AND 46-90
 
 
 ## Lista kluczowych pojęć i zagadnień

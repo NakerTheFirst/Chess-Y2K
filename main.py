@@ -1,20 +1,21 @@
-import phase5
 import utility
 import phase1
 import phase2
 import phase3
+import phase4
+import phase5
+import phase6
+import phase7
+import phase8
 
-# TODO:
-# TODO: Implement daily simulation process with a ranking points track based on matches won
+# TODO: Implement the singular match simulation - remember to keep the track of ranking
+# TODO: Implement the daily simulation process
+# TODO: Change the delta in phase 8 to influence game acc
 
 
 def main():
 
-    # print(phase3.get_acc())
-    # print(phase5.get_reviews_daily())
-    # print(utility.losses_analysed_curve(95))
-    x = utility.elim_method(1, 99, utility.losses_analysed_curve)
-    print(x)
+    pass
 
     return 0
 
