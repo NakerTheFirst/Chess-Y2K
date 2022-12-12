@@ -11,7 +11,10 @@ import phase3
 def main():
 
     # print(phase3.get_acc())
-    print(phase5.get_reviews_daily())
+    # print(phase5.get_reviews_daily())
+    # print(utility.losses_analysed_curve(95))
+    x = utility.elim_method(1, 99, utility.losses_analysed_curve)
+    print(x)
 
     return 0
 

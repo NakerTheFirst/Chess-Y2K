@@ -4,30 +4,35 @@ import scipy
 
 
 def learning_curve(x):
-    """Argument has to be a float from the interval 1-99"""
+    """Argument has to be an integer from the interval 1-99"""
     return math.log(x, 1.0472)
 
 
-def elim_method(range_start, range_stop):
-    """Elimination method for the learning curve. The arguments interval range have to be integers from 1-99."""
+def losses_analysed_curve(x):
+    """Argument has to be an integer from the interval 1-99"""
+    return 0.8299*(math.e**(0.0484*x))
+
+
+def elim_method(range_start, range_stop, fun):
+    """Elimination method for 1-99% range functions. The arguments are integers."""
 
     # Check if f(x) is lower than 0
     for x in range(range_start, range_stop):
-        if learning_curve(range_start) < 0:
+        if fun(range_start) < 0:
             return "Error in elim_method"
 
     # Find the maximum of a function
-    fmax = scipy.optimize.minimize_scalar(lambda n: -learning_curve(x), bounds=[range_start, range_stop], method='bounded').x
+    fmax = scipy.optimize.minimize_scalar(lambda n: -fun(n), bounds=[range_start, range_stop], method='bounded').x
 
     # Generate random xl and yl values
     xl = random.randint(range_start, range_stop)
     yl = random.randint(0, math.floor(fmax))
 
-    if yl <= learning_curve(xl):
+    if yl <= fun(xl):
         return xl, yl
 
     # If the guess was not correct, redo the randomisation process
-    while yl > learning_curve(xl):
+    while yl > fun(xl):
         xl = random.randint(range_start, range_stop)
         yl = random.randint(0, math.floor(fmax))
 
