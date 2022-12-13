@@ -2,7 +2,7 @@ import numpy as np
 import random
 
 
-def get_h_slept() -> str | tuple[int, int]:
+def get_h_slept() -> tuple[int, int]:
     """Return the number of hours the subject spent on sleeping per day. Modifier function."""
 
     # The probabilities of drawing a number from each interval
@@ -25,8 +25,8 @@ def get_h_slept() -> str | tuple[int, int]:
             mod = random.randint(-5, 5)
         case 3:
             h_slept = random.randint(8, 10)
-            mod = random.randint(15, 0)
+            mod = random.randint(0, 15)
         case _:
-            return "Error in match case"
+            return -1, -1
 
     return h_slept, mod

@@ -39,9 +39,9 @@ def elim_method(range_start: int, range_stop: int, fun, base: int = 0) -> int | 
     return yl
 
 
-def get_base(games_mod: int = 0, puzz_mod: int = 0, revs_mod: int = 0, vids_mod: int = 0, sleep_mod: int = 0):
+def get_mod(puzz_mod: int = 0, revs_mod: int = 0, vids_mod: int = 0, sleep_mod: int = 0, age_mod: int = 0):
     """Return the modified base of the interval from which the acc is generated"""
-    base = games_mod + puzz_mod + revs_mod + vids_mod + sleep_mod
+    base = puzz_mod + revs_mod + vids_mod + sleep_mod + age_mod
 
     # Handle base < 0 exception
     if base < 0:

@@ -2,7 +2,7 @@ import numpy as np
 import random
 
 
-def get_player_age() -> str | tuple[int, int]:
+def get_player_age() -> tuple[int, int]:
     """Return the age of the player. Modifier function."""
     # The probabilities of drawing a number from each interval
     lri_prob = 0.4
@@ -30,6 +30,6 @@ def get_player_age() -> str | tuple[int, int]:
             player_age = random.randint(5, 28)
             mod = random.randint(0, 15)
         case _:
-            return "Error in match case"
+            return -1, -1
 
     return player_age, mod

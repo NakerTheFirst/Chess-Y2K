@@ -2,7 +2,7 @@ import numpy as np
 import random
 
 
-def get_puzzles_daily() -> str | tuple[int, int]:
+def get_puzzles_daily() -> tuple[int, int]:
     """Return number of chess puzzles done per day. Modifier function."""
     # The probabilities of drawing a number from each interval
     lri_prob = 0.1
@@ -26,6 +26,6 @@ def get_puzzles_daily() -> str | tuple[int, int]:
             puzzles_daily = random.randint(11, 30)
             mod = random.randint(0, 15)
         case _:
-            return "Error in match case"
+            return -1, -1
 
     return puzzles_daily, mod

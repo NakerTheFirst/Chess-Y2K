@@ -2,7 +2,7 @@ import numpy as np
 import random
 
 
-def get_minutes_watched() -> str | tuple[int, int]:
+def get_minutes_watched() -> tuple[int, int]:
     """Return number of minutes subject spent on watching educational chess materials per day. Modifier function."""
 
     # The probabilities of drawing a number from each interval
@@ -27,6 +27,6 @@ def get_minutes_watched() -> str | tuple[int, int]:
             minutes_watched = random.randint(20, 60)
             mod = random.randint(0, 15)
         case _:
-            return "Error in match case"
+            return -1, -1
 
     return minutes_watched, mod

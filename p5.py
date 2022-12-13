@@ -3,7 +3,7 @@ import utility
 import random
 
 
-def get_reviews_daily() -> str | tuple[int | int]:
+def get_reviews_daily() -> tuple[int, int]:
     """Return the percentage of lost games analysed per day. Modifier function."""
 
     # The probabilities of drawing a number from each interval
@@ -24,7 +24,7 @@ def get_reviews_daily() -> str | tuple[int | int]:
         case 3:
             mod = random.randint(0, 10)
         case _:
-            return "Error in match case"
+            return -1, -1
 
     # Run through the whole range of specified intervals
     reviews_daily = utility.elim_method(1, 99, utility.losses_analysed_curve)
