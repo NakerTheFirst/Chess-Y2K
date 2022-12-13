@@ -2,8 +2,8 @@ import numpy as np
 import random
 
 
-def get_minutes_watched():
-    """Simulate number of minutes the subject spent on watching chess studying materials per day"""
+def get_minutes_watched() -> int:
+    """Return the number of minutes the subject spent on watching chess studying materials per day"""
 
     low_ranking_interval = random.randint(0, 9)
     medium_ranking_interval = random.randint(10, 19)

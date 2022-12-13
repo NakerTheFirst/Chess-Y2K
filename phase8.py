@@ -2,8 +2,8 @@ import numpy as np
 import random
 
 
-def get_player_age():
-    """Simulate the age of the player"""
+def get_player_age() -> int:
+    """Return the age of the player"""
     low_ranking_interval = random.randint(46, 90)
     low_ranking_interval2 = random.randint(1, 4)
     medium_ranking_interval = random.randint(29, 45)

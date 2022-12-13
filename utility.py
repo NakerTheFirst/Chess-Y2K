@@ -3,18 +3,18 @@ import math
 import scipy
 
 
-def learning_curve(x):
+def learning_curve(x: int) -> float:
     """A curve simulating learning. Argument has to be an integer from the interval 1-99"""
     return math.log(x, 1.0472)
 
 
-def losses_analysed_curve(x):
+def losses_analysed_curve(x: int) -> float:
     """A curve simulating % of people analysing lost games. Argument has to be an integer from the interval 1-99"""
     return 0.8299*(math.e**(0.0484*x))
 
 
-def elim_method(range_start, range_stop, fun):
-    """Elimination method for 1-99% range functions. The range_start and range_stop arguments are integers."""
+def elim_method(range_start: int, range_stop: int, fun, base: int = 0) -> int | str:
+    """Elimination method for curve functions"""
 
     # Check if f(x) is lower than 0
     for x in range(range_start, range_stop):
@@ -26,14 +26,22 @@ def elim_method(range_start, range_stop, fun):
 
     # Generate random xl and yl values
     xl = random.randint(range_start, range_stop)
-    yl = random.randint(0, math.floor(fmax))
+    yl = random.randint(base, math.floor(fmax))
 
     if yl <= fun(xl):
-        return xl, yl
+        return yl
 
     # If the guess was not correct, redo the randomisation process
     while yl > fun(xl):
         xl = random.randint(range_start, range_stop)
         yl = random.randint(0, math.floor(fmax))
 
-    return xl, yl
+    return yl
+
+
+def get_base(games_mod: float, puzz_mod: float, revs_mod: float, vids_mod: float, sleep_mod: float):
+    """Return the modified base of the interval from which the acc is generated."""
+    # To be updated later
+    base = 1
+
+    return base

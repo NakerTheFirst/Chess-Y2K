@@ -2,7 +2,7 @@ import random
 import numpy as np
 
 
-def get_games_daily():
+def get_games_daily() -> int:
     """Simulate number of games played per day"""
     low_ranking_interval = random.randint(1, 2)
     medium_ranking_interval = random.randint(3, 6)

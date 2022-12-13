@@ -10,7 +10,7 @@ Jaki ranking można osiągnąć na chess.com w 90 dni, grając przynajmniej jedn
 ## Lista etapów 
 1. Startowy poziom rankingowy 
 2. Dzienna ilość zagranych meczów 
-3. Średni dzienny procent dokładności na mecz 
+3. Procent dokładności na mecz 
 4. Dzienna ilość wykonanych puzzli 
 5. Dzienny procent zanalizowanych przegranych gier 
 6. Dzienna ilość minut materiałów wideo obejrzanych nt. nauki gry w szachy 

@@ -2,8 +2,8 @@ import numpy as np
 import random
 
 
-def get_h_slept():
-    """Simulate number of hours the subject spent on sleeping per day"""
+def get_h_slept() -> int:
+    """Return the number of hours the subject spent on sleeping per day"""
 
     low_ranking_interval = random.randint(0, 5)
     medium_ranking_interval = random.randint(6, 7)

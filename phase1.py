@@ -2,7 +2,7 @@ import random
 import numpy as np
 
 
-def get_initial_ranking():
+def get_initial_ranking() -> int:
     """Simulate initial chess.com ranking"""
     # 100-899 RP interval
     high_time_interval = random.randint(100, 899)
