@@ -10,7 +10,7 @@ def learning_curve(x: int) -> float:
 
 def losses_analysed_curve(x: int) -> float:
     """A curve simulating % of people analysing lost games. Argument has to be an integer from the interval 1-99"""
-    return 0.8299*(math.e**(0.0484*x))
+    return 0.8299 * (math.e ** (0.0484 * x))
 
 
 def elim_method(range_start: int, range_stop: int, fun, base: int = 0) -> int | str:
@@ -39,9 +39,12 @@ def elim_method(range_start: int, range_stop: int, fun, base: int = 0) -> int | 
     return yl
 
 
-def get_base(games_mod: float, puzz_mod: float, revs_mod: float, vids_mod: float, sleep_mod: float):
-    """Return the modified base of the interval from which the acc is generated."""
-    # To be updated later
-    base = 1
+def get_base(games_mod: int = 0, puzz_mod: int = 0, revs_mod: int = 0, vids_mod: int = 0, sleep_mod: int = 0):
+    """Return the modified base of the interval from which the acc is generated"""
+    base = games_mod + puzz_mod + revs_mod + vids_mod + sleep_mod
+
+    # Handle base < 0 exception
+    if base < 0:
+        base = 0
 
     return base

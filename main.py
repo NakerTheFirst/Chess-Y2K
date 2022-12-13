@@ -1,13 +1,13 @@
 import game_sim
 import utility
-import phase1
-import phase2
-import phase3
-import phase4
-import phase5
-import phase6
-import phase7
-import phase8
+import p1
+import p2
+import p3
+import p4
+import p5
+import p6
+import p7
+import p8
 
 # TODO: Implement the daily modifiers for singular match simulation
 # TODO: Implement the daily simulation process
@@ -16,9 +16,8 @@ import phase8
 
 def main():
 
-    ranking_init = phase1.get_initial_ranking()
+    ranking_init = p1.get_initial_ranking()
     ranking = ranking_init
-    print("Initial ranking: ", ranking_init)
 
     # Simulate a game played per day - NOT X GAMES PLAYED PER DAY
     for x in range(90):
@@ -29,7 +28,7 @@ def main():
 
     delta = ranking - ranking_init
 
-    return print("Final ranking: ", ranking, "\nDelta: ", delta)
+    return print(f"Initial ranking: \n{ranking_init} Final ranking: {ranking} \nDelta: {delta}")
 
 
 if __name__ == "__main__":
