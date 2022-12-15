@@ -11,9 +11,6 @@ import p6
 import p7
 import p8
 
-# TODO: Create a histogram from the data.txt - x: samples with the same result y: value of delta
-# TODO: Create a valid documentation - simply use README.md
-
 
 def sim_90_days():
     """Return the delta ranking of one test subject after running 90 days of simulation"""
@@ -65,15 +62,15 @@ def main():
     for x in range(len(tops)):
         bin_centres.append((bin_edges[x] + bin_edges[x+1]) / 2)
 
-    plt.hist(data, bins=50, density=True, label="Data")
-
     fit_params, cov_matrix = scipy.optimize.curve_fit(utility.gauss_dist, bin_centres, tops)
     y_output = scipy.stats.norm.pdf(bin_centres, mean, std)
 
+    # Plot the figure
+    plt.hist(data, bins=50, density=True, label="Data", color="green")
     plt.title("How much can one's ranking change after 90 days of learning?")
     plt.xlabel("Ranking change")
     plt.ylabel("Density")
-    plt.plot(bin_centres, y_output, label=f"Fitting function")
+    plt.plot(bin_centres, y_output, label=f"Fitting function", color="#ff6404")
     plt.legend()
     plt.show()
 
