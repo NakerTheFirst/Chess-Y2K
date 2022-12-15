@@ -1,3 +1,4 @@
+import numpy as np
 import random
 import math
 import scipy
@@ -11,6 +12,15 @@ def learning_curve(x: int) -> float:
 def losses_analysed_curve(x: int) -> float:
     """A curve simulating % of people analysing lost games. Argument has to be an integer from the interval 1-99"""
     return 0.8299 * (math.e ** (0.0484 * x))
+
+
+def gauss_dist(x_data: float | list[float], mean: float, std: float) -> float:
+    """Gaussian distribution function passed to scipy.optimize.curve_fit"""
+    pi = math.pi
+    e = math.e
+    y = 1/(std*math.sqrt(2*pi))*e**((-0.5)*((x_data-mean)/std)**2)
+
+    return y
 
 
 def elim_method(range_start: int, range_stop: int, fun, base: int = 0) -> int | str:
