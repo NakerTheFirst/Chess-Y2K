@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import scipy.optimize
+import numpy as np
 import game_sim
 import utility
 import p1
@@ -8,7 +11,6 @@ import p6
 import p7
 import p8
 
-# TODO: Write the data to data.txt file
 # TODO: Create a histogram from the data.txt - x: samples with the same result y: value of delta
 # TODO: Create a valid documentation - simply use README.md
 
@@ -37,11 +39,43 @@ def sim_90_days():
 
 
 def main():
-    data = []
-
     # Simulate the process 7000 times
-    for x in range(100):
-        data.append(sim_90_days())
+    # for x in range(7000):
+    #     data.append(sim_90_days())
+
+    # Write the data to file
+    # with open('data.txt', 'w') as f:
+    #     for x in range(len(data)):
+    #         f.write(f"{str(data[x])} ")
+    #     f.write("\n")
+
+    # Read the data from file
+    with open('data.txt') as f:
+        data = f.readlines()
+
+    for x in range(7000):
+        data[x] = data[x].rstrip()
+        data[x] = int(data[x])
+
+    tops, bin_edges = np.histogram(data, bins=50)
+    bin_centres = []
+    mean = np.mean(data)
+    std = np.std(data)
+
+    for x in range(len(tops)):
+        bin_centres.append((bin_edges[x] + bin_edges[x+1]) / 2)
+
+    plt.hist(data, bins=50, density=True, label="Data")
+
+    fit_params, cov_matrix = scipy.optimize.curve_fit(utility.gauss_dist, bin_centres, tops)
+    y_output = scipy.stats.norm.pdf(bin_centres, mean, std)
+
+    plt.title("How much can one's ranking change after 90 days of learning?")
+    plt.xlabel("Ranking change")
+    plt.ylabel("Density")
+    plt.plot(bin_centres, y_output, label=f"Fitting function")
+    plt.legend()
+    plt.show()
 
     return 0
 
