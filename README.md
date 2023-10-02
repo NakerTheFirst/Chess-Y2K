@@ -110,13 +110,9 @@ o jaką podn
 - Metoda odwróconej dystrybuanty
 - Metoda eliminacji
 
-### Generowanie liczb z rozkładu zmiennej dyskretnej
-- [Python](https://www.shorturl.at/DMS03)
-
 ### Symulacja Monte Carlo
 - Fancy way of saying "losowanie liczb" 
 
 ### Metody modelowania rozkładów
-- [Python](https://www.shorturl.at/yBEK7)
 - Fit w Root'cie
 - Rozkład Chi kwadrat
