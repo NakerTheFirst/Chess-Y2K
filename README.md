@@ -111,7 +111,7 @@ o jaką podn
 - Metoda eliminacji
 
 ### Symulacja Monte Carlo
-- Fancy way of saying "losowanie liczb" 
+- Fancy way of saying "losowanie liczb" w astronomicznej liczbie
 
 ### Metody modelowania rozkładów
 - Fit w Root'cie
